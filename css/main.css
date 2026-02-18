@@ -53,9 +53,6 @@
 
 .animated-container .item {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20%;
     cursor: pointer;
     transition: 0.5s ease-in-out all;
@@ -70,6 +67,20 @@
     background-color: rgb(48, 177, 95);
     opacity: 0.2;
     z-index: 1;
+    transition: 0.5s ease-in-out all;
+}
+
+.animated-container .item .text {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out all;
 }
 
 .animated-container .item:hover {
@@ -77,6 +88,11 @@
     transform: translateY(-10px);
 }
 
-.animated-container .item:hover .background{
-    background-color: rgb(53, 53, 53);
+.animated-container .item:hover .background {
+    background-color: rgb(108, 108, 108);
+    opacity: 1;
+}
+
+.animated-container .item:hover .text{
+    color: white;
 }
