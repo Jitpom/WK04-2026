@@ -1,42 +1,65 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 60% 400px;
     grid-template-rows: 200px 200px 200px;
     grid-template-areas: 
         "item1 item1 item1"
-        "item2 item3 item3"
-        "item2 item4 item5";
+        "item3 item4 item4"
+        "item3 item5 item2";
     gap: 4px;
 }
 
-.item {
+.container .item {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: lightblue;
 }
 
-.item:nth-child(2n) {
+.container .item:nth-child(2n) {
     background-color: lightcoral;
 }
 
-.item1 {
+.container .item1 {
     grid-area: item1;
 }
 
-.item2 {
+.container .item2 {
     grid-area: item2;
 }
 
-.item3 {
+.container .item3 {
     grid-area: item3;
     background-color: rgb(53, 53, 53);
 }
 
-.item4 {
+.container .item4 {
     grid-area: item4;
 }
 
-.item5 {
+.container .item5 {
     grid-area: item5;
+}
+
+.animated-container{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.animated-container .item {    
+    background-color: rgb(48, 177, 95);   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    transition: 0.5s ease-in-out all;
+}
+
+.animated-container .item:hover{
+    background-color: rgb(183, 183, 183);
+    color: rgb(53, 53, 53);
 }
