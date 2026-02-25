@@ -27,3 +27,19 @@ nav.nav-bar .item {
 nav.nav-bar .item:hover {
     background-color: #d34b4b;
 }
+
+
+@media (min-width: 768px) {
+    nav.bars {
+        display: none;
+    }
+    
+    nav.nav-bar {
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    
+    nav.nav-bar .item {
+        width: auto;
+    }
+}
