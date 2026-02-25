@@ -164,6 +164,15 @@ header nav .item:hover{
         border-radius: 50%;        
     }
 }
+/* Breakpoints
+    0px - 600px: Mobile devices
+    600px - 768px: Tablets
+    768px - 992px: Small desktops 
+    992px - 1200px: Medium desktops
+    1200px - 1400px: Large desktops 
+
+*/
+
 
 @media (max-width: 768px) {
     .container {
@@ -175,6 +184,11 @@ header nav .item:hover{
             "item3"
             "item4"
             "item5";
+    }
+
+    .container .item.item2{
+        background-color: rgb(13, 3, 60);
+        color: white;
     }
 }
 
