@@ -16,6 +16,14 @@
     background-color: lightblue;
 }
 
+#firstItem {
+    background-color: blue;
+}
+
+.myItem{
+    background-color: lightgreen !important;
+}
+
 .container .item:nth-child(2n) {
     background-color: lightcoral;
 }
@@ -55,7 +63,7 @@
     position: relative;
     width: 20%;
     cursor: pointer;
-    transition: 0.5s ease-in-out all;
+    transition: 1s cubic-bezier(.24,1.93,.21,.03) all;
 }
 
 .animated-container .item .background {
@@ -64,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-color: rgb(48, 177, 95);
     opacity: 0.2;
     z-index: 1;
@@ -97,3 +105,19 @@
 .animated-container .item:hover .text{
     color: white;
 }
+
+#myAnimation {
+    width: 80%;
+    margin: 80px auto;
+    display:flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 100px;
+}
+
+#myAnimation .box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(48, 177, 95);
+}
+
