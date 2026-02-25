@@ -1,3 +1,22 @@
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 16px;    
+}
+
+header nav .item{
+    padding: 16px;
+    color: rgb(63, 63, 63);
+    cursor: pointer;    
+    transition: ease-in-out 0.5s all;
+}
+
+header nav .item:hover{
+    background: lightsalmon;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 60% 400px;
@@ -122,12 +141,13 @@
     animation: move-box 2s ease-out alternate;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
+    animation-delay: 5s;
 }
 
 @keyframes move-box {
     0% {
         transform: translate(0,0) rotate(0deg) scale(1);
-    }
+    } 
 
     40%{
         transform: translate(100px, 0) rotate(360deg) scale(2);
